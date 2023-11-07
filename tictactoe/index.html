@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE - 3*3</title>
+    <link rel="icon" href="./images/download.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="h1">TIC-TAC-TOE 3*3</h1>
+    
+    <div id="date" class="date da"></div>
+    <div id="time" class="time da"></div>
+
+    <table id="table">
+        <tr class="row1 row">
+            <td onclick="move(0)"></td>
+            <td onclick="move(1)"></td>
+            <td onclick="move(2)"></td>
+        </tr>
+        <tr class="row2 row">
+            <td onclick="move(3)"></td>
+            <td onclick="move(4)"></td>
+            <td onclick="move(5)"></td>
+        </tr>
+        <tr class="row3 row">
+            <td onclick="move(6)"></td>
+            <td onclick="move(7)"></td>
+            <td onclick="move(8)"></td>
+        </tr>
+    </table>
+    <script src="./script.js"></script>
+
+    <div id="d1" class="d1">
+        <div id="d2" class="d2">
+            <h1 class="h1">Congratulations!..</h1>
+            <h1 class="emoji">🥳</h1>
+            <h2 class="h2">Winner X🥇</h2>
+            <button class="b" id="but01" onclick="replay()">Play Again</button>
+        </div>
+    </div>
+
+    <div id="d3" class="d1">
+        <div id="d4" class="d2">
+            <h1 class="h1">Congratulations!..</h1>
+            <h1 class="emoji">🥳</h1>
+            <h2 class="h2">Winner O🥇</h2>
+            <button class="b" id="but02" onclick="replay()">Play Again</button>
+        </div>
+    </div>
+
+    <div id="d5" class="d5">
+        <div id="d6" class="d6">
+            <h1 id="o1">MATCH DRAW!..</h1>
+            <img class="imm1" src="./images/youtube-superchat.gif">
+            <button class="b" id="but03" onclick="replay()">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
